@@ -1,0 +1,129 @@
+body {
+  font-family: "Be Vietnam", sans-serif;
+}
+
+.App {
+  margin: 50px 50px 0 50px;
+  border: 0px solid #d4d7dd;
+  border-radius: 5px;
+}
+
+h1,
+h2,
+p {
+  text-align: center;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-left: 30px;
+  font-weight: 900;
+  color: dimgrey;
+}
+h2 {
+  font-size: 25px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  color: dimgrey;
+}
+p {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 50;
+  margin-top: 0px;
+  color: dimgrey;
+}
+
+img {
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+a {
+  color: #b1bcbf;
+  text-decoration: underline #b1bcbf;
+}
+
+a:hover {
+  color: #b1bcbf;
+  text-decoration: underline #b1bcbf;
+}
+
+form {
+  margin: 20px;
+  line-height: 20px;
+}
+
+.active {
+  color: dimgray;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
+  color: dimgray;
+}
+
+.current-forecast {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  border: 1px solid #d4d7dd;
+  border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 400px;
+}
+.weather-unit {
+  font-size: 15px;
+  position: relative;
+  top: -40px;
+  margin: 0;
+}
+
+.future-forecast {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #d4d7dd;
+  border-top-color: #d4d7dd;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 400px;
+}
+.col {
+  margin: auto;
+  padding: 5px 0 5px 0;
+  display: block;
+  text-align: center;
+  color: dimgrey;
+}
+.icons {
+  font-size: 40px;
+  position: relative;
+  left: 50px;
+  top: 50px;
+  color: dimgrey;
+}
+
+#weatherIcon {
+  margin-left: 0;
+  padding-left: 0;
+  max-width: 80px;
+}
+
+#forecast-temp {
+  margin-bottom: 20px;
+}
+
+#second-day-icon,
+#next-day-icon,
+#third-day-icon,
+#forth-day-icon {
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  color: #9ebe46;
+  max-width: 50px;
+}
