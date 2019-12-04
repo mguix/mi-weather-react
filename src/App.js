@@ -34,7 +34,7 @@ function App() {
             | <a href="/">ºF</a>
           </span>
         </h1>
-        <img src="illustration1.png" width="350" alt="tree-ilustration" />
+        <img src="illustration1.svg" width="350" alt="tree-ilustration" />
       </div>
       <div className="future-forecast">
         <form>
