@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import CurrentTime from "./CurrentTime";
 import axios from "axios";
 import "./weather.css";
 
@@ -9,12 +10,7 @@ export default function Weather(props) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      hour: "15",
-      minutes: "03",
-      day: "Monday",
       date: new Date(response.data.dt * 1000),
-      month: "June",
-      year: "2019",
       imgUrl: "http://openweathermap.org/img/wn/01d@2x.png",
       temperature: response.data.main.temp,
       description: response.data.weather[0].description
@@ -33,10 +29,9 @@ export default function Weather(props) {
             />
           </div>
           <h2>{weatherData.city}</h2>
-          <p>
-            {weatherData.hour}:{weatherData.minutes} {weatherData.day}{" "}
-            {weatherData.date}, {weatherData.month} {weatherData.year}
-          </p>
+          <div className="time">
+            <CurrentTime date={weatherData.date} />
+          </div>
           <h1 className="temperature-container">
             {Math.round(weatherData.temperature)}
             <span className="weather-unit">

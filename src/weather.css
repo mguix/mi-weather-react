@@ -19,11 +19,12 @@ h2 {
   margin-bottom: 0;
   color: dimgrey;
 }
-p {
+.time {
   font-size: 14px;
   margin: 0;
   font-weight: 50;
   margin-top: 0px;
+  text-align: center;
   color: dimgrey;
 }
 
