@@ -83,13 +83,7 @@ form {
   border-bottom-right-radius: 5px;
   width: 400px;
 }
-.col {
-  margin: auto;
-  padding: 5px 0 5px 0;
-  display: block;
-  text-align: center;
-  color: dimgrey;
-}
+
 .icons {
   font-size: 40px;
   position: relative;
@@ -102,19 +96,4 @@ form {
   margin-left: 0;
   padding-left: 0;
   max-width: 80px;
-}
-
-#forecast-temp {
-  margin-bottom: 20px;
-}
-
-#second-day-icon,
-#next-day-icon,
-#third-day-icon,
-#forth-day-icon {
-  font-size: 50px;
-  margin: 0;
-  padding: 0;
-  color: #9ebe46;
-  max-width: 50px;
 }
