@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CurrentTime from "./CurrentTime";
+import CurrentTemp from "./CurrentTemp";
 import Forecast from "./Forecast";
 import axios from "axios";
 import "./weather.css";
@@ -49,15 +50,9 @@ export default function Weather(props) {
           <div className="time">
             <CurrentTime date={weatherData.date} />
           </div>
-          <h1 className="temperature-container">
-            {Math.round(weatherData.temperature)}
-            <span className="weather-unit">
-              <a href="/" className="active">
-                Cº
-              </a>{" "}
-              | <a href="/">ºF</a>
-            </span>
-          </h1>
+          <div className="temp">
+            <CurrentTemp celsius={weatherData.temperature} />
+          </div>
           <img src="illustration1.svg" width="350" alt="tree-ilustration" />
         </div>
         <div className="future-forecast">
